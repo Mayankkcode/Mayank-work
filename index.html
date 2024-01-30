@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-converter-Convert your currency</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+    nav{
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: 900;
+        margin:0;
+        padding:0;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul{
+        display: flex;
+        font-size: 20px;
+    }
+
+        .container{
+            min-height: 100vh;
+            font-family: 'Noto Sans', sans-serif;
+            max-width: 80vw;
+            margin:auto;
+        }
+        .container h1{
+            text-align:center;
+            margin:23px;
+
+
+        }
+        .container form{
+            display:flex;
+            flex-direction:column;
+        }
+        .container form label{
+            font-size: 25px;
+        }
+        .container form input[type='number'], select{
+            font-size: 25px;
+            margin-bottom: 23px 0;
+            width:23 vw;
+
+        }
+        
+        footer{
+            text-align: center;
+        }
+        nav li a{
+        text-decoration:none;
+        color: rgb(18, 57, 185);
+        transition: all;
+        transition-duration: 500ms;
+    }
+    nav li a:hover{
+
+        text-decoration:none;
+        color:red;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">My Currency-converter</div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about us">About Us</a></li>
+            <li><a href="/Contact">Contact</a></li>
+            
+            
+        </ul>
+
+    </nav>
+    
+        
+    
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity: </label>
+
+            <input type="number" name="quantity" min="1" max="10">
+
+            <label for="currency">Choose a currency</label>
+            <select name="currency">
+                <option value="INR">Indian Rupee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+
+            </select> 
+            <button class="button" type="submit">Submit</button>
+        </form>
+        <div class="output">
+            <h1>Here is your converted values of different currencies</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Column1</th>
+                        <th>Column2</th>
+                        <th>Column3</th>
+
+
+                        <th colspan="2">Column2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data1</td>
+                        <td>Data2</td>
+                        <td>Data2</td>
+                    </tr>
+                    <tr>
+                        <td>Data1</td>
+                        <td>Data2</td>
+                        <td>Data2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+    <footer>
+        Copyright &copy; All rights reserved
+
+    </footer>
+    <script>
+
+    </script>
+    <script src="main.js">
+</body>
+</html>
